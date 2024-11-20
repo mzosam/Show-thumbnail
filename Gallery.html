@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin-top: 5px;
+            object-fit: cover;
+        }
+        .container{
+            display: flex;
+            padding: 5px;
+        }
+        div:nth-of-type(2)>img{
+            width: 320px;
+            height: 415px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="images/download (1).jfif" onclick="changeImage(this)">
+
+            <img src="images/download.jfif" onclick="changeImage(this)">
+
+            <img src="images/Teddy Bear.jfif" onclick="changeImage(this)">
+
+            <img src="images/downloa.jfif" onclick="changeImage(this)">
+        </div>
+
+        <div>
+            <img src="images/download (1).jfif" id="display">
+        </div>
+    </div>
+
+    <script>
+        function changeImage(image){
+            display.src = image.src;
+        }
+    </script>
+</body>
+</html>
